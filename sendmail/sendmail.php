@@ -15,8 +15,8 @@
 	$mail->Port = '587';
 	$mail->SMTPSecure = 'TLS';
 
-	$mail->setFrom('soglasie.sergey@gmail.com', 'Soglasie test');
-	$mail->addAddress('s.shalynin@gmail.com');
+	$mail->setFrom('s.shalynin@gmail.com', 'Test Test');
+	$mail->addAddress('soglasie.sergey@gmail.com');
 	$mail->Subject = 'Email from Soglasie!';
 
 	$body = '<h1>Заголовок письма!</h1>';
