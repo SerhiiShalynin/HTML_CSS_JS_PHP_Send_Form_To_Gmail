@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Send form to gmail</title>
+</head>
+<body>
+	<div class="wrapper">
+		<form action="sendmail/sendmail.php" method="post" enctype="multipart/form-data" class="form">
+			<input required type="text" placeholder="Your Name" name="name" class="form__input">
+			<input required type="email" placeholder="Your Email Address" name="email" class="form__input">
+			<div class="form__options options-form">
+				<h4 class="options-form__title">Do you like simple-form?</h4>
+				<label class="options-form__item">
+					<input checked type="radio" name="like" value="Yes!" class="options-form__input">
+					<span class="options-form__text">Yes!</span>
+				</label>
+				<label class="options-form__item">
+					<input type="radio" name="like" value="Yes sure!" class="options-form__input">
+					<span class="options-form__text">Yes sure!</span>
+				</label>
+			</div>
+			<textarea name="message" placeholder="Your Message" class="form__input"></textarea>
+			<div class="form__file file-form">
+				<label class="file-form__item">
+					<input name="image" type="file" accept=".jpg, .png" class="file-form__input">
+					<div class="file-form__button button">Choose File</div>
+				</label>
+				<div class="file-form__name"></div>
+			</div>
+			<label class="form__checkbox checkbox-form">
+				<input required type="checkbox" name="example" class="checkbox-form__input">
+				<span class="checkbox-form__text">This example is good!</span>
+			</label>
+			<button class="form__button button">Send</button>
+		</form>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
